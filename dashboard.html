@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnLink Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>LearnLink</h2>
+      <nav>
+        <a href="#profile">Profile</a>
+        <a href="#materials">Study Materials</a>
+        <a href="#alumni">Alumni</a>
+        <a href="#mentors">Mentors</a>
+        <a href="frontend.html">Logout</a>
+      </nav>
+    </aside>
+
+    
+    <main class="content">
+
+      <div class="dashboard">
+  <img id="profileImage" src="default.png" 
+       style="width:120px; height:120px; border-radius:50%; object-fit:cover;">
+  <h2>Welcome, <span id="profileName"></span> 👋</h2>
+  <p>College: <span id="profileCollege"></span></p>
+  <p>Your Categories: <span id="profileCategories"></span></p>
+</div>
+      
+      <section id="profile" class="card">
+        <h2>👤 Personal Info</h2>
+       
+        <p><b>Contact</b> <span id="profileContact"></span></p>
+        <p><b>State:</b> <span id="profileState"></span></p>
+        <p><b>LinkedIn:</b> <a id="profileLinkedIn" href="#" target="_blank">Visit Profile</a></p>
+        <p><b>Github:</b><a id="profileGithub" href="#" target="_blank">Visit profile</a></p>
+        <button onclick="validatestep4()">update</button>
+      </section>
+            
+     
+
+      
+      <section id="materials" class="card">
+        <h2>📚 Study Materials</h2>
+        <div id="material-list">Will be Updating soon!</div>
+      </section>
+
+    
+      <section id="alumni" class="card">
+        <h2>🎓 Alumni Insights</h2>
+        <ul>
+          <li><b>Ravi Kumar</b> (2019) — "Focus on DSA for placements!"</li>
+          <li><b>Neha Sharma</b> (2020) — "DBMS is key for interviews."</li>
+          <li><b>Arjun Patel</b> (2021) — "Start projects early, it helps a lot."</li>
+        </ul>
+      </section>
+
+    
+      <section id="mentors" class="card">
+        <h2>🤝 Mentors</h2>
+        <p>Coming Soon...</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnLink Multi-Step</title>
+  <link rel="stylesheet" href="sih.css">
+</head>
+<body>
+
+<div class="container">
+  
+  <div class="step active" id="step1">
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="loginCheck()">Login</button>
+  </div>
+
+  
+  <div class="step" id="step2">
+    <h2>Personal Info</h2>
+    <img id="profile-pic" src="https://via.placeholder.com/100" alt="Profile Picture">
+    <input type="file" id="fileInput" accept="image/*">
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="text" id="college" placeholder="College / University">
+    <input type="number" id="year" placeholder="Year / Batch">
+    <button onclick="validateStep2()">Next</button>
+  </div>
+
+  
+  <div class="step" id="step3">
+    <h2>Choose Categories</h2>
+    <select id="categories" multiple>
+      <option>DSA</option>
+      <option>C</option>
+      <option>C++</option>
+      <option>AI / ML</option>
+      <option>DBMS</option>
+      <option>Cyber-security</option>
+      <option>Networking</option>
+      <option>Web Development</option>
+    </select>
+    <button onclick="validateStep3()">Finish</button>
+  </div>
+
+  <div class="step" id="step4">
+  <h2>Personal Info</h2>
+  <input type="text" id="fullName" placeholder="Full Name">
+  <input type="text" id="contact" placeholder="Contact Number">
+  <input type="text" id="state" placeholder="State You Stay">
+  <input type="text" id="linkedin" placeholder="LinkedIn Profile Link">
+  <input type="text" id="Github" placeholder="Github link">
+  <button onclick="validateStep4()">let's go!</button>
+</div>
+
+  
+  <div class="step" id="step4">
+    <h2>Welcome!</h2>
+    <p id="summary">champ</p>
+    <button onclick="goToDashboard()">Let's Go to Dashboard</button>
+  </div>
+</div>
+
+<script src="jsx.js"></script>
+</body>
+</html>
